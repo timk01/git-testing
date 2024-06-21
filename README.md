@@ -17,11 +17,25 @@ TL;DR: тесты, автоматизация, декомпозиция - час
 
 Сейчас я нахожусь на ветке мейн по-умолчанию:
 `git remote show origin `  
-[картинка](src/images/img.png)  
-git push origin main
+[картинка](src/images/img.png)   
+`git add .  
+git commit -m "commit description"  
+git push origin main`  
+возможно, придется убидеться что есть доступ/пароли  
 
+Теперь. Как посмотреть ветки?  
+`git branch (текущая ветка - будет мейн если не создавал иную)`  
+`git branch -r (удаленные ветки) `     
+`git remote -v (настройки удаленного репо, откуда фетчить, куда пушить)`      
 
-git ну норм
+### Переименование главной ветки (локально, уадленно)
+`git branch -m main trunk (local repo rename)`  
+`git push origin trunk (пушим обратно)`  
+здесь он вообще предложит создать мр, но - нафиг оно
+[очередная картинка](src/images/img_1.png)  
+так переименовывать ветку. switch branch to another trunk --> yes (or kinda) - выбираем транк  
+https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/changing-the-default-branch  
+`git push origin --delete main (так сносим удаленную ветку)`
 
 ### Создаём ветку  
 ```bash
