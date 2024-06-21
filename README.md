@@ -192,4 +192,5 @@ git cherry-pick <хэш-коммита>
 
 ## Попрактиковаться в git
 
+
 https://learngitbranching.js.org
